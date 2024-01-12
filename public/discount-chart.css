@@ -1,0 +1,37 @@
+#discount-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#discount-chart table {
+  margin: 5% 0 5% 0;
+  border-collapse: collapse;
+  width: 75%;
+  border-color: black;
+}
+
+#discount-chart table th {
+  border: 3px white solid;
+  background-color: #0099ff;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+#discount-chart table tr {
+  border: 3px white solid;
+}
+
+#discount-chart table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#discount-chart table td {
+  border: 3px white solid;
+  padding: 10px;
+}
+/*# sourceMappingURL=discount-chart.css.map */

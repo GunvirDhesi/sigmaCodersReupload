@@ -1,0 +1,83 @@
+@import "./colors.scss";
+#info-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    #sub-info-3-container{
+        width: 60%;
+        .card{
+            margin-top: 5%;
+            display: flex;
+            box-shadow: 0px 0px 20px rgba(0,0,0, 0.2);
+            border-radius: 15px;
+            img{
+                object-fit: cover;
+                object-position: center center;
+                width: 250px;
+                height: 250px;
+            }
+            .limage{
+                margin-right: 5%;
+                border-radius: 15px 0px 0px 15px;
+            }
+            .rimage{
+                margin-left: 5%;
+                border-radius: 0px 15px 15px 0px;
+            }
+            .nimage{
+                margin-left: -3%;
+                width: auto !important;
+                height: 250px !important;
+            }
+            .rtext{
+                padding: 20px;
+                .special-button-info-3{
+                    text-decoration: none;
+                    color: $soft-grey;
+                    border: 2px $soft-grey solid;
+                    border-radius: 4px;
+                    padding: 5px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $white;
+                        border-color: $blue;
+                        background-color: $blue;
+                    }
+                }
+            }
+            .ltext{
+                padding: 20px;
+                .special-button-info-3{
+                    text-decoration: none;
+                    color: $soft-grey;
+                    border: 2px $soft-grey solid;
+                    border-radius: 4px;
+                    padding: 5px;
+                    transition: 0.5s;
+                    &:hover{
+                        color: $white;
+                        border-color: $blue;
+                        background-color: $blue;
+                    }
+                }
+            }
+            div{
+                h2{
+                    font-size: 1.8rem;
+                    color: $soft-black;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 1rem;
+                    color: $soft-grey;
+                    letter-spacing: 1px;
+                    width: 550px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
