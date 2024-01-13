@@ -13,6 +13,22 @@
 
 #info-3 #sub-info-3-container {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container {
+    width: 80%;
+  }
 }
 
 #info-3 #sub-info-3-container .card {
@@ -20,6 +36,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -31,7 +50,7 @@
   -o-object-position: center center;
      object-position: center center;
   width: 250px;
-  height: 250px;
+  height: 35vh;
 }
 
 #info-3 #sub-info-3-container .card .limage {
@@ -54,6 +73,14 @@
   padding: 20px;
 }
 
+#info-3 #sub-info-3-container .card .rtext p {
+  width: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #info-3 #sub-info-3-container .card .rtext .special-button-info-3 {
   text-decoration: none;
   color: #838383;
@@ -72,6 +99,14 @@
 
 #info-3 #sub-info-3-container .card .ltext {
   padding: 20px;
+}
+
+#info-3 #sub-info-3-container .card .ltext p {
+  width: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #info-3 #sub-info-3-container .card .ltext .special-button-info-3 {
@@ -104,5 +139,58 @@
   line-height: 24px;
   font-weight: 400;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container #nodejs-lang {
+    height: 700px;
+  }
+  #info-3 #sub-info-3-container #nodejs-lang .ltext {
+    height: 700px;
+  }
+  #info-3 #sub-info-3-container #nodejs-lang .ltext h2 {
+    width: 175px;
+    height: auto;
+    margin: 0px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #info-3 #sub-info-3-container #css-lang {
+    height: 500px;
+  }
+  #info-3 #sub-info-3-container #css-lang .rtext {
+    height: 500px;
+  }
+  #info-3 #sub-info-3-container #css-lang .rtext h2 {
+    width: 175px;
+    height: auto;
+    margin: 0px 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #info-3 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 70vw !important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #info-3 {
+    margin-top: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    width: 90% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=info-3.css.map */

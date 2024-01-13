@@ -16,7 +16,7 @@ html, body {
           justify-content: center;
 }
 
-#info-1 {
+.info-1 {
   margin: 7% 0 7% 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +26,7 @@ html, body {
           justify-content: center;
 }
 
-#info-1 #sub-info-1-container {
+.info-1 #sub-info-1-container {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,14 +42,20 @@ html, body {
   padding: 3%;
 }
 
-#info-1 #sub-info-1-container h2 {
+.info-1 #sub-info-1-container h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #3b3b3b;
   margin-bottom: 10px;
 }
 
-#info-1 #sub-info-1-container p {
+@media only screen and (max-width: 600px) {
+  .info-1 #sub-info-1-container .package-title {
+    width: auto;
+  }
+}
+
+.info-1 #sub-info-1-container p {
   font-size: 1.2rem;
   color: #838383;
   letter-spacing: 1px;
@@ -58,9 +64,10 @@ html, body {
   line-height: 24px;
   font-weight: 400;
   margin-top: 10px;
+  width: auto;
 }
 
-#info-1 #sub-info-1-container a {
+.info-1 #sub-info-1-container a {
   text-decoration: none;
   color: #838383;
   bottom: 0;
@@ -70,7 +77,7 @@ html, body {
   transition: 0.4s;
 }
 
-#info-1 #sub-info-1-container a:hover {
+.info-1 #sub-info-1-container a:hover {
   font-size: 1.5rem !important;
 }
 
@@ -78,16 +85,30 @@ html, body {
   #sub-info-1-container {
     width: 70% !important;
   }
+  #sub-info-1-container p {
+    width: 70vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .info-1 {
+    margin-top: 100px;
+  }
   #sub-info-1-container {
     width: 90% !important;
+  }
+  #sub-info-1-container p {
+    height: 200px;
+    width: 90vw;
+  }
+  .info-1-2 {
+    margin: 0px 0px 26px;
+    height: 700px;
   }
 }
 
 #info-1-no-a-link {
-  margin: 7% 0 7% 0;
+  margin: 7% 7% 7% 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,14 +163,20 @@ html, body {
 }
 
 @media only screen and (max-width: 1000px) {
-  #sub-info-1-container {
+  #info-1-no-a-link #sub-info-1-no-a-link-container {
     width: 70% !important;
+  }
+  #info-1-no-a-link #sub-info-1-no-a-link-container p {
+    width: 70vw;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  #sub-info-1-container {
+  #info-1-no-a-link #sub-info-1-no-a-link-container {
     width: 90% !important;
+  }
+  #info-1-no-a-link #sub-info-1-no-a-link-container p {
+    width: 90vw;
   }
 }
 
@@ -195,6 +222,13 @@ html, body {
   line-height: 24px;
   font-weight: 400;
   margin-top: 10px;
+  width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  #info-1-no-padding #sub-info-1-no-padding-container p {
+    width: auto;
+  }
 }
 
 #info-1-no-padding #sub-info-1-no-padding-container a {
@@ -209,6 +243,7 @@ html, body {
   border-radius: 7px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  margin-bottom: -10px;
 }
 
 #info-1-no-padding #sub-info-1-no-padding-container a:hover {
@@ -217,7 +252,19 @@ html, body {
   background-color: #0099ff;
 }
 
-#info-1-no-padding #sub-info-1-no-padding-container .contact-info {
+@media only screen and (max-width: 1000px) {
+  #info-1-no-padding #sub-info-1-no-padding-container a {
+    margin-bottom: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #info-1-no-padding #sub-info-1-no-padding-container a {
+    margin-bottom: -30px;
+  }
+}
+
+#info-1-no-padding .contact-info {
   color: #0099ff !important;
   white-space: nowrap;
 }

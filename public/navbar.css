@@ -10,6 +10,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 20;
 }
 
 nav .navbrand a {
@@ -34,6 +35,10 @@ nav .navbrand a img {
   width: auto;
   height: 40px;
   border-radius: 30px;
+}
+
+nav #toggleBtn {
+  margin-left: 5%;
 }
 
 nav #toggleBtn div {

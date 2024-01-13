@@ -144,7 +144,17 @@
     }
 }
 @media only screen and (max-width: $phone){
+    #info-2{
+        margin-top: 100px;
+    }
     #sub-info-1-container{
         width: 90% !important;
+    }
+    .options{
+        flex-direction: column;
+        .info-2-title{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
     }
 }

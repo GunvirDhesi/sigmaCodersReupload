@@ -5,16 +5,23 @@
     flex-direction: column;
     #sub-info-3-container{
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and (max-width: $phone) {
+            width: 80%
+        }
         .card{
             margin-top: 5%;
             display: flex;
+            align-items: center;
             box-shadow: 0px 0px 20px rgba(0,0,0, 0.2);
             border-radius: 15px;
             img{
                 object-fit: cover;
                 object-position: center center;
                 width: 250px;
-                height: 250px;
+                height: 35vh;
             }
             .limage{
                 margin-right: 5%;
@@ -31,6 +38,10 @@
             }
             .rtext{
                 padding: 20px;
+                p{
+                    width: auto;
+                    user-select: none;
+                }
                 .special-button-info-3{
                     text-decoration: none;
                     color: $soft-grey;
@@ -47,6 +58,10 @@
             }
             .ltext{
                 padding: 20px;
+                p{
+                    width: auto;
+                    user-select: none;
+                }
                 .special-button-info-3{
                     text-decoration: none;
                     color: $soft-grey;
@@ -78,6 +93,50 @@
                 }
             }
         }
+        #nodejs-lang{
+            @media only screen and (max-width:$phone){
+                height: 700px;
+                .ltext{
+                    height: 700px;
+                    h2{
+                        width: 175px;
+                        height: auto;
+                        margin: 0px 0px 10px;
+                    }
+                }
+            }
+        }
+        #css-lang{
+            @media only screen and (max-width:$phone){
+                height: 500px;
+                .rtext{
+                    height: 500px;
+                    h2{
+                        width: 175px;
+                        height: auto;
+                        margin: 0px 0px 10px;
+                    }
+                }
+            } 
+        }
     }
 }
 
+@media only screen and (max-width: $ipad) {
+    #info-3{
+        justify-content: center;
+    }
+    .card{
+        width: 70vw !important;
+    }
+}
+@media only screen and (max-width: 780px){
+    #info-3{
+        margin-top: 100px;
+        justify-content: center;
+    }
+    .card{
+        width: 90% !important;
+        flex-wrap: wrap;
+    }
+}

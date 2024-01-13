@@ -24,6 +24,7 @@
             font-size: 30px;
             color: rgb(59, 59, 59);
             margin-bottom: 10px;
+            text-align: center;
         }
         p{
             font-size: 17px;
@@ -34,6 +35,15 @@
             line-height: 24px;
             font-weight: 500;
             margin-top: 10px;
+            width:600px;
+            @media only screen and (max-width: $ipad) {
+                width: auto;
+                margin: 5px 5vw;
+            }
+            @media only screen and (max-width: $phone) {
+                width: auto;
+                margin: 5px 5vw;
+            }
         }
     }
 
@@ -58,6 +68,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+            }
             img{
                 margin-top: 0px;
             }
@@ -97,6 +110,9 @@
                 border-color:$blue;
                 margin-bottom: -20px;
                 transition: 0.5s;
+                @media only screen and (max-width: $phone){
+                    margin-bottom: 10px; 
+                }
             }
             // Animation for the button on hover
             a:hover{
@@ -109,9 +125,51 @@
         // These are seperate classes for the difference in position of the three boxes
         .extension2{
             margin-top: 50px;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+                a{
+                    margin-bottom: 10px;
+                }
+            }
         }
         .extension3{
             margin-top: 100px;
+            @media only screen and (max-width: $phone){
+                margin: 10px 25px 0px;
+                a{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: $ipad) {
+    // upper portion
+    .extension-top p{
+        width: 70vw;
+    }
+    //lower portion
+}
+@media only screen and (max-width: $phone){
+    // upper portion
+    #top-3{
+        margin-top: 100px;
+    }
+    .extension-top p{
+        width: auto;
+    }
+    //lower portion
+    .extension-bottom{
+        flex-direction: column;
+        height: 1500px;
+        width: 80%;
+        margin-top: 250px;
+        .extension-box{
+            height: 400px;
+            width: 275px;
+            margin: none;
         }
     }
 }
